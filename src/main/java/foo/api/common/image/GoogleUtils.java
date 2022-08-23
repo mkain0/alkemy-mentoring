@@ -1,6 +1,6 @@
 package foo.api.common.image;
 
-public class GoogleUtils implements UploadImage {
+public class GoogleUtils implements UploadFile {
 
     public String upload(IFile file) {
         // Google logic

@@ -4,7 +4,7 @@ import foo.api.exception.ServiceException;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class DropboxUtils implements UploadImage {
+public class DropboxUtils implements UploadFile {
 
     public String upload(IFile file) {
         try {

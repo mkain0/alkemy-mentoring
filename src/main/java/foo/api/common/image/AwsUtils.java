@@ -1,6 +1,6 @@
 package foo.api.common.image;
 
-public class AwsUtils implements UploadImage {
+public class AwsUtils implements UploadFile {
 
     public String upload(IFile file) {
         // AWS logic

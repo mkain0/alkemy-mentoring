@@ -1,8 +1,6 @@
 package foo.api.common.image;
 
-import foo.api.external.DropboxException;
-
-public interface UploadImage {
+public interface UploadFile {
 
     String upload(IFile file);
 
