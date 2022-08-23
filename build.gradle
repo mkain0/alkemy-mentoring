@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.1'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'io.franzbecker.gradle-lombok' version '4.0.0'
+}
+
+ext {
+    set('springCloudVersion', "2021.0.3")
+}
+
+group 'alkemy.mentoring'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+lombok {
+    version = '1.18.12'
+    sha256 = ""
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testImplementation 'org.assertj:assertj-core:3.22.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+}
+
+test {
+    useJUnitPlatform()
+}
